@@ -4,7 +4,7 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-export function Home() {
+export function Home(props) {
 	return (
 		//Contador
 
@@ -13,22 +13,22 @@ export function Home() {
 				<i className="far fa-clock fa-5x clock"></i>{" "}
 			</div>
 			<div className="box ">
-				<h1 className="align-items-center">0</h1>
+				<h1 className="align-items-center">{props.six}</h1>
 			</div>
 			<div className="box">
-				<h1>0</h1>
+				<h1>{props.five}</h1>
 			</div>
 			<div className="box">
-				<h1>0</h1>
+				<h1>{props.four}</h1>
 			</div>
 			<div className="box">
-				<h1>0</h1>
+				<h1>{props.three}</h1>
 			</div>
 			<div className="box">
-				<h1>0</h1>
+				<h1>{props.two}</h1>
 			</div>
 			<div className="box">
-				<h1>0</h1>
+				<h1>{props.one}</h1>
 			</div>
 		</div>
 	);
