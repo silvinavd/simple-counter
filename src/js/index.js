@@ -14,12 +14,12 @@ import { Home } from "./component/home.js";
 let counter = 0;
 
 setInterval(() => {
-	let six = Math.floor(counter / 100000);
-	let five = Math.floor(counter / 10000);
-	let four = Math.floor(counter / 1000);
-	let three = Math.floor(counter / 100);
-	let two = Math.floor(counter / 10);
-	let one = Math.floor(counter / 1);
+	let six = Math.floor(counter / 100000) % 10;
+	let five = Math.floor(counter / 10000) % 10;
+	let four = Math.floor(counter / 1000) % 10;
+	let three = Math.floor(counter / 100) % 10;
+	let two = Math.floor(counter / 10) % 10;
+	let one = Math.floor(counter / 1) % 10;
 	ReactDOM.render(
 		<Home
 			one={one}
@@ -32,5 +32,5 @@ setInterval(() => {
 		document.querySelector("#app")
 	);
 	counter++;
-}, 100);
+}, 1000);
 //render your react application
