@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -33,3 +34,11 @@ export function Home(props) {
 		</div>
 	);
 }
+Home.propTypes = {
+	six: PropTypes.string,
+	five: PropTypes.string,
+	four: PropTypes.string,
+	three: PropTypes.string,
+	two: PropTypes.string,
+	one: PropTypes.string
+};
